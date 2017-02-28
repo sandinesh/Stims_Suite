@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head> 
+        <script src="Scripts/angular.js"></script>
+        <script src="Scripts/angular.min.js"></script>
+        <script src="Scripts/sample.js"></script>
+        <link rel="stylesheet" href="app/bootstrap.min.css">
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="customer">
+            <table class="table table-bordered" border="1">
+                <thead>
+                    <tr>
+                    <th ng-repeat="(header, value) in names[0]">{{ header }}</th>
+                    <th>Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in names | filter:searchText">
+                    <td ng-repeat="cell in row">{{cell}}</td>
+                    <td><span class="glyphicon glyphicon-pencil"></span></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </body>
+</html>

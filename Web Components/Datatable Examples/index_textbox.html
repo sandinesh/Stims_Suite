@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="Scripts/angular.js"></script>
+        <script src="Scripts/angular.min.js"></script>
+        <script src="Scripts/sample.js"></script>
+        <style>
+        td{
+            padding:10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="customer" >
+            <table ng-repeat="(header, values) in names[0]">
+                <tr>
+                <td><input type="text"  placeholder="{{ header }}" /></td>
+                </tr>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="Scripts/jquery.searchable-1.0.0.min.js"></script>
+        
+        <script src="Scripts/angular.js"></script>
+        <script src="Scripts/angular.min.js"></script>
+        <script src="Scripts/sample.js"></script>
+        <script src="Scripts/filters.js"></script>
+        <link rel="stylesheet" href="app/bootstrap.min.css">
+        <link rel="stylesheet" href="app/filters.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="customer">
+<div class="container">
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Users</h3>
+                <div class="">
+                    <div class="row">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <input type="search" id="search" value="" class="form-control" placeholder="Search">
+                </div>
+            </div>
+                </div>
+            </div>
+            <table class="table" id="table">
+                <thead>
+                    <tr class="filters">
+                    <th ng-repeat="(header, value) in names[0]">{{header}}</th>
+                    <th><em class="fa fa-cog"></em></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in names | filter:searchText">
+                    <td ng-repeat="cell in row">{{cell}}</td>
+                    <td align="center">
+                        <a class="btn btn-default"><span class="fa fa-pencil"></span></a>
+                        <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+         </div>
+    </div>
+        </div>
+    </body>
+</html>
