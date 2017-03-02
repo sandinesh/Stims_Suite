@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>
+Registration Form
+</title>
+<!-- Latest compiled and minified CSS -->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="  css/breadcrumbs.css">
+    <link href="School Registration/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  <style type="text/css">
+	
+.centered-form{
+	margin-top: 50px;
+}
+.font
+{
+	display: block;
+width: 100%;
+height: 40px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+   
+    
+}
+
+}
+
+	.studentphoto {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+td {
+   padding:10px;
+   
+}
+.mar
+{
+	border-radius: 5px;
+}
+
+.customDiv
+      {
+        padding:10px;
+        margin:1px;
+        min-height:30px;
+        background-color:silver;
+        text-align: center;
+        }
+
+.margin_for_breadcrumb
+{
+  margin-top:19px;
+}
+.breadcrumb { 
+  list-style: none; 
+  overflow: hidden; 
+  font-size:16px;
+}
+.breadcrumb li { 
+  float: left; 
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 50px;
+  /* fallback color */
+  background: hsla(0, 0%, 0%,1); 
+  position: relative; 
+  display: block;
+  float: left;
+}
+.breadcrumb li a::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(0, 0%, 0%,1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.breadcrumb li a::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 3px;
+  left: 100%;
+  z-index: 1; 
+}
+.breadcrumb li:first-child a {
+  padding-left: 60px;
+ 
+}
+.breadcrumb li:nth-child(4) a {
+
+  background: hsla(140, 100%, 40%,1);
+ 
+}
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(140, 100%, 40%,1); 
+  padding-left: 79px;
+}
+.breadcrumb > li 
+{ 
+  text-shadow: 0 0px 0 #FAE;
+}
+
+  </style>
+   
+
+</head>
+<body class="margin_for_breadcrumb">
+<ul class="breadcrumb">
+  <li><a href="#" style="
+    height: 40px;">Student Details</a></li>
+  <li><a href="#" style="
+    height: 40px;
+    padding-left: 60px;">Parent/Guardian Details</a></li>
+  <li><a href="#" style="
+    height: 40px;
+    ">Emergency Contact & Siblings Details</a></li>
+  <li><a href="#" style="
+    height: 40px;">School Details</a></li>
+  <li><a href="#" style="
+    height: 40px;">Other Details</a></li>
+  <li><a href="#" style="
+    height: 40px;">Uploads & Declaration</a></li>
+</ul>
+
+    <div class="container-fluid">
+        <div class="centered-form">
+            <div class="row">
+            <div class="col-lg-10">
+            <h3 class="text1">4. School Details</h3>
+            </div>
+            <div class="col-lg-offset-11">
+<a href="School_details.html" class="btn btn-info">
+      <span class="glyphicon glyphicon-pencil"></span> Edit
+   </a>
+            </div>
+            </div>
+        <div class="col-lg-12 ">
+
+        	<div class="panel panel-success ">
+        		<div class="panel-heading">
+			        <h3 class="panel-title">4.1 Current School Attended </h3>
+			 	</div>
+			 	<div class="panel-body">
+			    	<form role="form">
+			    	    <div class="row col-lg-12">
+			    		 <table width="100%"   >
+			    				
+			    			<tr>
+                    <td>
+                       <label for="currentschool" class="control-label" >Current School Attended:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                                  <label for="period" class="control-label" >Period of Attendence:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            </table>
+                        </div>
+                   </form>
+	            </div>
+	        
+	        
+	        </div>
+
+
+<div class="panel panel-success ">
+        		<div class="panel-heading">
+			        <h3 class="panel-title">4.2 Other School Attended </h3>
+			 	</div>
+			 	<div class="panel-body">
+			    	<form role="form">
+			    	    <div class="row col-lg-12">
+			    		 <table width="100%">
+			    				
+			    			<tr>
+                    <td>
+                       <label for="numberofschool" class="control-label" >Number of School Attended<br/>in the past years:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="nameofschool" class="control-label" >Name of School & Country:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="Typeofschool" class="control-label" >Type of School(Pre School, Elementry School):</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="attendedperiod" class="control-label" >Attended Period(mm/yyyy TO mm/yyyy):</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="class" class="control-label" >Class:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="international" class="control-label" >International School:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="language" class="control-label" >Language of Instruction:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="q1" class="control-label" >Does your child has any discontinuation<br/> in his/her studies?:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="q2" class="control-label" >Does your child has any learning <br/> disabilities ?:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="q3" class="control-label" >Please mention details:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="a3" class="control-label" >Does your child needs any special educational help?:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                    <td>
+                       <label for="a3" class="control-label" >please mention details:</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                          </table>
+                        </div>
+</form>
+</div>
+</div>
+
+
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">4.3 School Preferences </h3>
+                </div>
+                <div class="panel-body">
+                <ul>
+                <li>
+                <p>
+                    Please list below all your prefered schools in priority order.
+                </p>
+                </li>
+                </ul>
+                    <form role="form">
+                        <div class="row col-lg-12">
+                        <table class="table table-hover table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>Preference</th>
+        <th>Preferred School</th>
+        <th>Siblings already attending the school</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1st</td>
+        <td>DB School</td>
+        <td>No</td>
+        <td>Near to Home</td>
+      </tr>
+      <tr>
+        <td>2nd</td>
+        <td>CB school</td>
+        <td>yes</td>
+        <td>They Providing facility to get excellent communication skills</td>
+      </tr>
+      
+    </tbody>
+  </table>
+                        </div>
+                         <div class="btn-group col-lg-offset-10">
+         
+           <a href="rev_other_details.html" class="btn btn-primary" > --Next-- </a>
+           </div>
+</form>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="School Registration/js/bootstrap.min.js"></script>
+
+</body>
+</html>		    			
+			    			

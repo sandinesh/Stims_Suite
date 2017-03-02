@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PayRoll</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/main.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="jquery-3.1.1.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/label.css">
+     </script>
+     </head>
+     <style>
+   .panel-default {
+    margin-top: 10%;
+    margin-left:400px;
+    width: 50%;
+ }
+ .form-horizontal .control-label {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+} 
+
+
+table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-right: 1px solid #ddd;
+
+}
+
+ td, th {
+  padding: 10px;
+}
+
+td:first-child,  th:first-child {
+  padding-left: 20px;
+}
+th{
+    text-align: left;
+   padding-left: 10px
+   padding-left:  10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  
+}
+ h2,h3
+{
+  text-align:center;
+}
+@media print
+{
+.noprint {display:none;}
+}
+</style>
+<script type="text/javascript">
+	function CreateTableFrom(){
+   document.getElementById('res').style.display="inline";
+}
+</script>
+<body>
+<div id="legend">
+<legend class="text-primary"><h1>Revised Empolyee Salary</h1>
+</legend>
+    <div class="main-container">
+    <div class="row gutter">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="panel">                       
+    <div class="panel-body">
+    <form id="defaultForm" method="post" action="" class="form-horizontal">
+    <fieldset>
+    <div class="form-group row gutter">
+    <h2>
+  <img src="x.jpg" class="img-circle pull-mid" width="100" height="100">Revised Empolyee Salary</h2>
+  <label class="col-lg-6 control-label">Employee ID:</label>
+ <div class="col-lg-6"><input type="text" class="form-control" name="" placeholder=""></div>
+  </div>
+  <div class="form-group row gutter">
+   <label class="col-lg-6 control-label">Date of Joining:</label>
+<div class="col-lg-6"><input type="Date" 
+ class="form-control" placeholder="" name=""></div>
+</div>
+ <div class="form-group row gutter">
+ 
+  <div class="form-group row gutter">
+ <label class="col-lg-6 control-label">Experience:</label>
+ <div class="col-lg-6"><input type="text" class="form-control" name="" placeholder=""></div>
+  </div>
+  <div class="form-group row gutter">
+<label class="col-lg-6 control-label">Last Permission:</label>
+<div class="col-lg-6"><input type="text" class="form-control" name="" placeholder=""></div>
+</div>
+  <div class="form-group row gutter">
+<label class="col-lg-6 control-label">Designation:</label>
+<div class="col-lg-6"><input type="text" class="form-control" name="" placeholder=""></div>
+</div>
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Last Revised By:</label>
+<div class="col-lg-6"><input type="text" class="form-control" placeholder="" name=""></div>
+</div>
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Last Revised:</label>
+<div class="col-lg-6"><input type="text" class="form-control" placeholder="" name=""></div>
+</div>
+ </fieldset>
+<div class="form-group row gutter">
+<div class="col-lg-6 col-lg-offset-6"><input type="button"  class="btn btn-primary"  onclick="CreateTableFrom()" value="Proceed" /></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div id="res" style="display: none">  
+<div class="panel">
+
+<div class="panel-body">
+<form id="defaultForm" method="post" class="form-horizontal">
+<fieldset>
+<!--  <legend>Regular expression based validators</legend> -->
+<table>
+<thead>
+<tr><th>Salary</th>
+<th>Current Salary</th>
+<th>Revied Salary</th>
+<th>Revised</th></tr>
+<tr>
+<td>Full Basic:</td>
+<td id="td01">10,000</td>
+<td id="td02">10,000</td>
+<td id="td03">0%</td>
+</tr>
+<tr>
+<td>Full HRA:</td>
+<td id="td04">70,000</td>
+<td id="td05"></td>
+<td id="td06">2%</td>
+</tr>
+<tr>
+<td>Full DA:</td>
+<td id="td07">10,000</td>
+<td id="td08">10,000</td>
+<td id="td09">0%</td>
+</tr>
+<tr>
+<td>Full PF:</td>
+<td id="td10">10,000</td>
+<td id="td11">10,000</td>
+<td id="td12">0%</td>
+</tr>
+<tr>
+<td>Full ESI:</td>
+<td id="td13">10,000</td>
+<td id="td14">10,000</td>
+<td id="td15">0%</td>
+</tr>
+<tr>
+<td>Total Amount</td>
+<td id="td14"></td>
+<td id="td15"></td>
+<td id="td 16"></td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Effective From
+</label>
+<div class="col-lg-6">
+<input type="text" class="form-control" placeholder="" name="">
+<label class="control-label">(Please Specify the valid data)</label>
+</div>
+</tr>
+</thead>
+</table></div>
+</fieldset>
+</div>                            
+<div class="form-group no-margin">
+<div class="row gutter">
+<div class="col-md-6"></div>
+<div class="col-md-2"><button type="submit" class="btn btn-primary">Save</button></div>
+<div class="col-md-3"><button type="submit" class="btn btn-primary">Cancel</button></div>
+</div>
+</div>
+                              
+</form>
+</div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+      
+</body>
+</html>
+
+
+
+
+
+
+
+

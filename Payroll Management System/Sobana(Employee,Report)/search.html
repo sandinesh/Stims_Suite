@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Search Employee</title>
+
+    <!-- Bootstrap -->
+    <link href="Bootstrap Tutorial/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+      td
+      {
+        padding:9px;
+      }
+      .panel-body{
+        height: 350px;
+      }
+      .panel-body-photo{
+        height: 150px;
+      }
+      </style>
+</head>
+<body>
+<center>
+    <h2 > Search Employee</h2>
+</center>
+<hr/>
+<br\>
+<center>
+<div class="col-lg-4">
+ <div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Search Employee </h3>  
+      <!--  <a href="searchresult.html" class="btn btn-primary">Search</a></td></tr> -->
+     </div>
+     <div class="panel-body">
+           <table width="100%">
+            <tr>
+            <td>Employee ID:</td>
+            <td><input type="text" class="col-md-6" class="form-control" ></td>
+            </tr>
+            <tr>
+            <td>Employee name:</td>
+            <td><input type="text" class="col-md-6" class="form-control" ></td>
+            </tr>
+           <tr>
+            <td>Designation:</td><td>
+              <select id="grade" class="col-md-6" name="grade" class="form-control">
+                 <option value="-1" selected="selected"><pre>Designation </pre></option>
+                 <option value="1" >Principal</option>
+                 <option value="2">Vice-Principal</option>
+                 <option value="3">Staff</option>
+                 <option value="4">Attender</option>
+                 <option value="5">Pune</option>
+              </select>
+            <td>
+           </tr>
+           <tr>
+            <td>Grade:</td><td>
+              <select id="grade" class="col-md-6" name="grade" class="form-control">
+                 <option value="-1" selected="selected"><pre>Grade  </pre></option>
+                 <option value="1" >A</option>
+                 <option value="2">B</option>
+                 <option value="3">C</option>
+                 <option value="4">D</option>
+                 <option value="5">E</option>
+              </select>
+            <td>
+           </tr>
+           <tr>
+            <td>Increment Year:</td><td>
+              <select id="grade" class="col-md-6" name="grade" class="form-control">
+                 <option value="-1" selected="selected"><pre>Increment Year </pre></option>
+                 <option value="1" >A</option>
+                 <option value="2">B</option>
+                 <option value="3">C</option>
+                 <option value="4">D</option>
+                 <option value="5">E</option>
+              </select>
+            <td>
+           </tr>
+           <tr>
+            <td>Decrement Year:</td><td>
+              <select id="grade" class="col-md-6" name="grade" class="form-control">
+                 <option value="-1" selected="selected"><pre>Decrement Year </pre></option>
+                 <option value="1" >A</option>
+                 <option value="2">B</option>
+                 <option value="3">C</option>
+                 <option value="4">D</option>
+                 <option value="5">E</option>
+              </select>
+            <td>
+           </tr>
+
+          <tr>
+          <br\>
+           <br\>
+          <td>
+      <!-- <button type="button" class="btn btn-primary form-control" onClick="javascript:ButtonClick();">Search</button> -->
+       <a href="searchresult.html" class="btn btn-primary">Search</a></td></tr>
+      </td>
+      </tr>
+        </table>
+     </div>
+  </div>
+</div>
+</center>
+</body>

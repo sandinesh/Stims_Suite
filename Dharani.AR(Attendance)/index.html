@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Card View</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="control.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+<
+</script>
+</head>
+<body ng-app="myApp">
+  <style type="text/css">
+          .card {
+
+        text-align: center;
+        font-weight: bold; 
+        color:white;
+        min-height:25%;
+        box-shadow: 0 8px 16px 0 rgba( 0,0,0,0.2);   
+        background-color:#00c2cc;               
+        transition: 0.3s;
+        width: 50%;
+        border-radius: 5px;
+        backface-visibility:hidden;
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+        height: 132px;
+
+      }
+
+      img
+      {
+       border-radius:450px 50px 500px 500px;
+      }
+        
+  .card:hover .caption
+  {
+
+        opacity: 1;
+        transform: translateY(-125px);
+        -webkit-transform:translateY(-125px);
+        -moz-transform:translateY(-125px);
+        -ms-transform:translateY(-125px);
+         -o-transform:translateY(-125px);
+      }
+
+  .card img
+  {
+
+         z-index: 4;
+    }
+
+ .card .caption{
+
+          position:absolute;
+          top:150px;
+          -webkit-transition:all 0.3s ease-in-out;
+          -moz-transition:all 0.3s ease-in-out;
+          -o-transition:all 0.3s ease-in-out;
+          -ms-transition:all 0.3s ease-in-out;
+          transition:all 0.3s ease-in-out;
+          width:100%;
+
+    }
+         
+  .caption .blur
+  {
+          background-color: rgba(0,0,0,0.7);
+          height: 300px;
+          z-index: 5;
+          position: absolute;
+          width: 100%;
+    }
+       
+ .card .caption-text
+ {
+          z-index: 10;
+          color: #fff;
+          position: absolute;
+          height: 300px;
+          text-align: center;
+           color:white;
+          top:-1px;
+          width: 100%;
+
+   }
+     </style>
+
+     <script type="text/javascript">
+            </script>
+            <script type="text/javascript">
+            $(document).ready(function()
+            {
+              $('div #odd').css('background','#00c2cc');
+              $('div #even').css('background','#d98cb3');
+            });
+            </script>
+  <script>
+                     function tend() {
+                      // var id=this.id;
+                          document.getElementById("my1").style.visibility='visible';
+                                           }
+                     function tn() {
+                           document.getElementById("my1").style.visibility='hidden';
+                                           }
+                </script> 
+                 
+<div class="container" ng-controller="DetailController">
+
+      <div class="col-lg-12">
+         <br/>
+      </div>
+               <div  id="odd" class="card a"  ng-repeat="x in details" >
+
+               <img src ="tick.jpg" id="my1" style="visibility:hidden" height="20px" width="20px" align="right" />
+                  
+                     <center><br>
+                     <a href="www.google.com">
+                     <img src="{{x.Photo}}"  alt="Avatar" style="width:60px" height="60px"> 
+
+                     </a>
+                     </br></center>
+                     <h4> {{ x.Reg_No }}</h4>
+              
+
+
+                   <div class="caption">
+
+                   <div class="blur">
+
+                  </div>
+                   <div class="caption-text">
+
+                          <input type="button" onclick="tend(this);" value="select" style="font-size:8pt ;color:black;background-color:#b380ff
+                            ;border:2px solid #ffffff;padding:3px ">
+
+                           <input type="button" onclick="tn(this);" value="deselect" style="font-size:8pt ;color:black;background-color:#b380ff
+                            ;border:2px solid #ffffff;padding:3px">
+                      
+                    <p>{{ x.Name }}</p>
+                    <p>{{ x.Department}}</p>         
+                  </div>
+                </div>
+                </div></li>
+                </ul>
+<br/>
+</div>
+</body>
+</html>
