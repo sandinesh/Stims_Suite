@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Card View</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+
+   <style type="text/css">
+          .card {
+        text-align: center;
+        font-weight: bold; 
+        color:white;
+        min-height:25%;
+        box-shadow: 0 8px 16px 0 rgba( 0,0,0,0.2);   
+        background-color:#00c2cc;               
+        transition: 0.3s;
+        width: 50%;
+        border-radius: 5px;
+        backface-visibility:hidden;
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+        height: 132px;
+
+      }
+
+      img
+      {
+       border-radius:450px 50px 500px 500px;
+
+      }
+        
+  .card:hover .caption
+  {
+        opacity: 1;
+        transform: translateY(-125px);
+        -webkit-transform:translateY(-125px);
+        -moz-transform:translateY(-125px);
+        -ms-transform:translateY(-125px);
+         -o-transform:translateY(-125px);
+      }
+
+  .card img
+  {
+         z-index: 4;
+    }
+
+ .card .caption{
+
+          position:absolute;
+          top:150px;
+          -webkit-transition:all 0.3s ease-in-out;
+          -moz-transition:all 0.3s ease-in-out;
+          -o-transition:all 0.3s ease-in-out;
+          -ms-transition:all 0.3s ease-in-out;
+          transition:all 0.3s ease-in-out;
+          width:100%;
+
+    }
+         
+  .caption .blur
+  {
+          background-color: rgba(0,0,0,0.7);
+          height: 300px;
+          z-index: 5;
+          position: absolute;
+          width: 100%;
+    }
+       
+ .card .caption-text
+ {
+          z-index: 10;
+          color: #fff;
+          position: absolute;
+          height: 300px;
+          text-align: center;
+           color:white;
+          top:-1px;
+          width: 100%;
+
+   }
+     </style>
+
+    
+  
+<script type="text/javascript">
+
+var register={"Reg1":"13IT001","Reg2":"13IT002","Reg3":"13IT003","Reg4":"13IT004","Reg5":"13IT005","Reg6":"13IT006"};
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $('div #odd').css('background','#00c2cc');
+  $('div #even').css('background','#d98cb3');
+});
+
+</script>
+
+        </head>
+        <body>
+
+
+  <div class="container" id="cont">
+
+      <div class="col-lg-12">
+         <br/>
+      </div>
+    
+            <div  class="col-lg-2 col-md-4 col-sm-6"><br/>
+               <div  id="odd" class="card a">
+
+               <img src ="tick.jpg" id="my1"  style="visibility:hidden" height="20px" width="20px" align="right" />
+                  
+                     <center><br>
+                     <a href="www.google.com">
+                     <img src="photos\1.jpg"  alt="Avatar" style="width:60px" height="60px"> </a>
+                     </br></center>
+                     <!-- <h4 id=Regno1></h4> -->
+                
+                  <script>
+                     function tend() {
+                          document.getElementById('my1').style.visibility='visible';
+                                           }
+                     function tn() {
+                           document.getElementById('my1').style.visibility='hidden';
+                                           }
+                           document.write(register.Reg1);
+
+                          
+                     </script> 
+
+
+                   <div class="caption">
+                   <div class="blur">
+
+                  </div>
+                   <div class="caption-text">
+                          <input type="button" onclick="tend()" value="select" style="font-size:8pt ;color:black;background-color:#b380ff
+                            ;border:2px solid #ffffff;padding:3px">
+                         <input type="button" onclick="tn()" value="deselect" style="font-size:8pt ;color:black;background-color:#b380ff
+                            ;border:2px solid #ffffff;padding:3px">
+
+                   
+                    <p></p>
+                    <p>4th IT</p>
+                 
+                  </div>
+                </div>
+             </div>
+          </div>
+
+       
+
+
+           <div  class="col-lg-2 col-md-4 col-sm-6"><br/>
+              <div id="even" class="card b"  >
+           
+               <img src ="tick.jpg" id="my2"  style="visibility:hidden" height="20px" width="20px" align="right" />
+                <center><br>
+                
+                <a href="www.gmail.com">
+            
+                <img src="Photos\2.jpg"   alt="Avatar" style="width:60px" height="60px">                           
+               </br></center></a>
+              <!-- <h4 id="RegNo1"></h4>  -->              
+                       <script>
+                       function c2() {
+                           document.getElementById('my2').style.visibility='visible';
+                                       }
+                         function ca2() {
+                             document.getElementById('my2').style.visibility='hidden';
+                                       }
+      
+                                 document.write(register.Reg2);
+                     </script> 
+                 <div class="caption">
+                   <div class="blur">
+                   </div>
+                      <div class="caption-text">
+                      
+                       <input type="button" onclick="c2()" value="select" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+                        <input type="button" onclick="ca2()" value="deselect" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+                         <p>Dharani.AR</p>
+                         <p>4th IT</p>
+                        </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+
+          <div  class="col-lg-2 col-md-4 col-sm-6"><br/>
+            <div  id="odd" class="card c">
+              <img src ="tick.jpg" id="my3"  style="visibility:hidden" height="20px" width="20px" align="right" />
+               <center><br>
+              <img src="Photos\3.jpg" id="present"  alt="Avatar" style="width:60px" height="60px">
+              </br></center>
+              <!-- <h4 id="RegNo2"></h4>  -->
+               <script>
+                       function c3() {
+                                    document.getElementById('my3').style.visibility='visible';
+                                           }
+                       function ca3() {
+                                document.getElementById('my3').style.visibility='hidden';
+                                              }
+                     document.write(register.Reg3);
+                     </script> 
+                <div class="caption">
+                   <div class="blur">
+                     
+                   </div>
+                      <div class="caption-text">
+                        <input type="button" onclick="c3()" value="select" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+                        <input type="button" onclick="ca3()" value="deselect" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+                         <p>Dharani.P</p>
+                         <p>4th IT</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+        <div  class="col-lg-2 col-md-4 col-sm-6"><br/>
+          <div  id="even" class="card d">
+           <img src ="tick.jpg" id="my4"  style="visibility:hidden" height="20px" width="20px" align="right" />
+            <center><br>
+            <img src="Photos\4.jpg" alt="Avatar" style="width:60px" height="60px">
+            </br></center>
+            <!-- <h4 id="RegNo3" ></h4>  -->
+            <script>
+               function c4() {
+                      document.getElementById('my4').style.visibility='visible';
+                               }
+               function ca4() {
+             document.getElementById('my4').style.visibility='hidden';
+                                 }
+                         document.write(register.Reg4);
+                     </script> 
+               <div class="caption">
+                 <div class="blur">
+                   
+                 </div>
+               <img id="tick" src="tick.jpg"  style="display: none" width="20px" height="20px">
+               <div class="caption-text">
+              <input type="button" onclick="c4()" value="select" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+                        <input type="button" onclick="ca4()" value="deselect" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+               <p> Dhivya.S </p>
+               <p> 4th IT </p>
+               </div>
+             </div>
+          </div>
+       </div>  
+
+ 
+
+
+        <div   class="col-lg-2 col-md-4 col-sm-6"><br/>
+          <div id="odd"  class="card e">
+           <img src ="tick.jpg" id="my5"  style="visibility:hidden" height="20px" width="20px" align="right" />
+            <center><br>
+            <img src="Photos\5.jpg" alt="Avatar" style="width:60px" height="60px">
+            </br></center>
+          <!--   <h4 id="RegNo4"></h4>  -->
+            <script>
+                      function c5() {
+                           document.getElementById('my5').style.visibility='visible';
+                                         }
+                    function ca5() {
+                  document.getElementById('my5').style.visibility='hidden';
+                                         }
+                  document.write(register.Reg5);
+                     </script> 
+           <div class="caption">
+         <div class="blur">
+           
+         </div>
+             <div class="caption-text">
+                 <input type="button" onclick="c5()" value="select" style="font-size:8pt ;color:black;background-color:#b380ff;border:2px solid #ffffff;padding:3px">
+                        <input type="button" onclick="ca5()" value="deselect" style="font-size:8pt ;color:black;background-color:#b380ff
+
+;border:2px solid #ffffff;padding:3px">
+                 <p> Guga Priya </p>
+                 <p> 4th IT </p>
+              </div>
+         </div>
+       </div>
+     </div>  
+
+
+
+         <div  class="col-lg-2 col-md-4 col-sm-6"><br/>
+           <div id="even"  class="card f">
+              <img src ="tick.jpg" id="my6"  style="visibility:hidden" height="20px" width="20px" align="right" />
+             <center><br>
+             <img src="Photos\6.jpg" alt="Avatar" style="width:60px" height="60px">
+             </br></center>
+            <!--  <h4 id="RegNo5"></h4>  -->
+               <script>
+                function c6() {
+                           document.getElementById('my6').style.visibility='visible';
+                                  }
+              function ca6() {
+                             document.getElementById('my6').style.visibility='hidden';
+                                      }
+                         document.write(register.Reg6);
+                     </script> 
+                <div class="caption">
+                    <div class="blur">
+                      
+                    </div>
+                       <div class="caption-text">
+                        <input type="button" onclick="c6()" value="select" style="font-size:8pt ;color:black;background-color:#b380ff
+                                      ;border:2px solid #ffffff;padding:3px">
+                        <input type="button" onclick="ca6()" value="deselect" style="font-size:8pt ;color:black;background-color: #b380ff
+                                    ;border:2px solid #ffffff;padding:3px">
+                         <p>Hemalatha.P</p>
+                        <p>4th IT</p>
+                       </div>
+                    </div>
+                </div>
+             </div>  
+       </div>
+      </div>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Bootstrap Tutorial/js/bootstrap.min.js"></script>
+  </body>
+</html>

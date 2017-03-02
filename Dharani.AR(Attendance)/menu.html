@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	#navbar
+  	{
+  		background-color: #4d1933;
+  		font-color:black;
+  	}
+#back
+{
+	background-color: #da8bb3;
+}
+
+#pie,#bar,#Line,#Histo
+{
+	display:none;
+}
+
+  </style>
+</head>
+<body>
+<script type="text/javascript">
+ 
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  function card()
+  {
+  	document.getElementById("cont").style.display="inline";
+  }
+	function view()
+	{
+		document.getElementById("pie").style.display="inline";
+		document.getElementById("bar").style.display="none";
+		document.getElementById("Line").style.display="none";
+		document.getElementById("Histo").style.display="none";
+	}none
+	function barchart()
+	{
+		document.getElementById("pie").style.display="none";
+		document.getElementById("bar").style.display="inline";
+		document.getElementById("Line").style.display="none";
+		document.getElementById("Histo").style.display="none";
+	}
+	function line()
+	{
+		document.getElementById("pie").style.display="none";
+		document.getElementById("bar").style.display="none";
+		document.getElementById("Line").style.display="inline";
+		document.getElementById("Histo").style.display="none";
+	}
+	function Histogram()
+	{
+		document.getElementById("pie").style.display="none";
+		document.getElementById("bar").style.display="none";
+		document.getElementById("Line").style.display="none";
+		document.getElementById("Histo").style.display="inline";
+	}
+</script>
+<nav class="navbar navbar-inverse" id="navbar" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://santechnosolutions.com/">STIMS SUIT</a>
+    </div>
+    <ul class="nav navbar-nav" >
+      
+      <li class="active dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Class <span class="caret"></span></a>
+        <ul class="dropdown-menu" id="back">
+          <li><a href="card.html" onclick="card()">I</a></li>
+          <li><a href="#">II</a></li>
+          <li><a href="#">III</a></li>
+           <li><a href="#">IV</a></li>
+          <li><a href="#">V</a></li>
+          <li><a href="#">VI</a></li>
+           <li><a href="#">VII</a></li>
+          <li><a href="#">VII</a></li>
+          <li><a href="#">IX</a></li>
+           <li><a href="#">X</a></li>
+          <li><a href="#">XI</a></li>
+          <li><a href="#">XII</a></li>
+        </ul>
+      </li>
+      <li ><a href="#">Total Students</a></li>
+      <li><a href="#">Date<input type="date" style="width:70px; height: 25px; color:white; font-weight: bold; background-color: #4d1933 " id="datepicker"></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Default<span class="caret"></span></a>
+      <ul class="dropdown-menu" id="back">
+          <li><a href="#">Absent</a></li>
+          <li><a href="#">Present</a></li>
+          <li><a href="#">OD</a></li></ul></li>
+
+
+          <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Session<span class="caret"></span></a>
+      <ul class="dropdown-menu" id="back">
+          <li><a href="#">FN</a></li>
+          <li><a href="#">AN</a></li>
+          </ul></li>
+
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphical View<span class="caret"></span></a>
+      <ul class="dropdown-menu" id="back">
+          <li><a href="#" onclick="view()">Pie Chart</a></li>
+          <li><a href="#" onclick="barchart()">Bar chart</a></li>
+          <li><a href="#" onclick="line()">Line chart</a></li>
+          <li><a href="#" onclick="Histogram()">Histogram</a></li></ul></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+<center>
+ <img src="photos/images.jpg" id="pie" style="margin-top:200px;" >
+ <img src="photos/bar.jpg" id="bar" style="margin-top:200px;" >
+  <img src="photos/line.jpg" id="Line" style="margin-top:200px;" >
+   <img src="photos/Histogram.jpg" id="Histo" style="margin-top:200px;" >
+ </center>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

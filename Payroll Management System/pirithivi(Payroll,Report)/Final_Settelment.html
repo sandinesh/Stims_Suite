@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PayRoll</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/label.css">
+</script>
+</head>
+<style type="text/css">
+   .panel-default {
+    margin-top: 10%;
+    margin-left:400px;
+    width: 50%;
+ }
+ .form-horizontal .control-label {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+} 
+img:hover{
+transition:1s transform ;
+transform: rotateY(360deg);
+    margin-bottom: 30px;
+
+  }
+  .container  {
+  text-align: left;
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+}
+
+ table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-right: 1px solid #ddd;
+text-align: right;
+}
+
+td, th {
+  padding: 10px;
+}
+
+r td:first-child, th:first-child {
+  padding-left: 20px;
+}
+ th{
+    text-align: left;
+   padding-left: 10px
+   padding-left:  10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  
+}
+h2,h3
+{
+  text-align:center;
+}
+@media print
+{
+.noprint {display:none;}
+}
+
+</style>
+<script type="text/javascript">
+function CreateTableFromJSON(){
+   document.getElementById('sep_emp').style.display="inline";
+}
+function CreateTableFrom(){
+   document.getElementById('finalset').style.display="inline";
+}
+</script>
+<body>
+   <div id="legend">
+      <legend class="text-primary"><h1>Final Settelment</h1>
+      </legend>
+      </div>
+       <div class="main-container">
+      <div class="row gutter">
+      <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+      <div class="panel">
+      <div class ="noprint"> 
+      <div class="panel-body">
+      <form id="defaultForm" method="post" action="#" class="form-horizontal">
+      <fieldset>
+       <div class="form-group row gutter">
+      <label class="col-lg-1 control-label" id="empId">EMP ID:</label> 
+      <div class="col-lg-2"><input type="text" class="form-control" ></div>
+      <label  class="col-lg-1 control-label">Duration:</label> 
+      <div class="col-lg-2"><input type="date" class="form-control" id="inputDate"></div>
+      <div class="col-md-3">
+      <input type="button"  class="btn btn-primary"  onclick="CreateTableFromJSON()" value="Separate Employee" />
+     
+      </fieldset>
+      </div>
+    </form>
+  </div>
+  </div>
+</fieldset>
+</form>
+</div>
+
+<div class="main-container">
+<div class="row gutter">
+<div id="sep_emp" style="display: none">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="panel">
+<div class="panel-heading">
+  
+<h4>Separated Employee</h4>
+</div>
+<div class="panel-body">
+<form id="defaultForm" method="post" action="" class="form-horizontal">
+<fieldset>
+<!--  <legend>Not Empty Validator</legend> -->
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Employee to be setteled</label>
+<div class="col-lg-6">
+<select class="form-control" name="country">
+<option value="">-- Select a Date--</option>
+<option value="fr">France</option>
+<option value="de">Germany</option>
+<option value="it">Italy</option>
+<option value="jp">Japan</option>
+<option value="ru">Russia</option>
+<option value="gb">United Kingdom</option>
+<option value="us">United State</option>
+</select>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<!--  <legend>Regular expression based validators</legend> -->
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Resignation Subject On</label>
+<div class="col-lg-6"><input type="text" class="form-control" placeholder="" name=""></div>
+</div>
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Leaving Date</label>
+<div class="col-lg-6"><input type="date" class="form-control" id="inputDate"></div>
+</div>
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Leaving Reason</label>
+<div class="col-lg-6">
+<select class="form-control" name="country">
+<option value="">-- Select --</option>
+<option value="fr">01</option>
+<option value="de">02</option>
+<option value="it">03</option>
+<option value="jp">04</option>
+<option value="ru">05</option>
+<option value="gb">06</option>
+<option value="us">07</option>
+</select>
+</div>
+ </div>
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Settelement Date
+</label>
+<div class="col-lg-6"><input type="date" class="form-control" id="inputDate"></div>
+</div>
+<div class="form-group row gutter">
+<label class="col-lg-6 control-label">Leave Type
+</label>
+<div class="col-lg-6"><select class="form-control" name="country">
+<option value="">-- Select --</option>
+<option value="fr">01</option>
+<option value="de">02</option>
+<option value="it">03</option>
+<option value="jp">04</option>
+<option value="ru">05</option>
+<option value="gb">06</option>
+<option value="us">07</option>
+</select>
+</div>
+</div>
+<div class="form-group row gutter">
+ <label class="col-lg-6 control-label">No.Of.Days</label>
+<div class="col-lg-6"><input type="text" class="form-control" placeholder="" name=""></div>
+</div>
+</fieldset>                            
+ <div class="col-md-6"></div>
+<div class="col-md-3">
+  <input type="button"  class="btn btn-primary"  onclick="CreateTableFrom();" value="finish" /> </div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div id="finalset" style="display: none"> 
+<div class="panel">
+<div class="panel-heading">
+<h4>Settelment</h4>
+</div>
+<div class="panel-body">
+<form id="defaultForm" method="post" class="form-horizontal">
+<fieldset>
+<!--  <legend>Regular expression based validators</legend> -->
+<h3>  <tr>Settelment Completed</tr> </h3>
+<table>
+<thead>
+<tr>
+<td>Employee No:</td>
+<td id="td01">002</td>
+<td>Days Worked:</td>
+<td id="td02">366 days</td>
+</tr>
+<tr>
+<td> Settled on:</td>
+<td id="td03">26.10.2017</td>
+<td>Leave Encash:</td>
+<td id="td04"> 12 days</td>
+</tr>
+<tr>    
+    <td> Resigned On:</td>
+    <td id="td05">1.3.2017</td>
+    <td>Designation:</td>
+    <td id="td06">staff</td>
+</tr>
+</thead>
+</table>
+</div>
+</fieldset>                            
+<div class="form-group no-margin">
+<div class="row gutter">
+<div class="col-md-6"></div>
+<div class="col-md-3"><button type="submit" class="btn btn-primary">Reset</button></div>
+</div>
+</div>
+</form>
+</div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+      </div>
+      </div></div>
+      </body>
+</html>

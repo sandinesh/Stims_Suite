@@ -1,0 +1,217 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memo</title>
+    <link href="Bootstrap Tutorial/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+</script>
+
+<style>
+.boxed {
+	box-sizing: 1px;
+	width:120px;
+	height:150px;
+  border: 1px solid black ;
+  text-align: center;
+} 
+td
+{
+	padding:10px;
+}
+.profile-img {
+	width: 100px;
+	height: 150px;
+	margin: 0 auto 30px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+td
+  {
+    padding:9px;
+  }
+</style>
+<script type="text/javascript">
+function ButtonClick()
+{
+document.getElementById('TableView').style.display="inline";
+}
+</script>
+</head>
+<body>
+<center><h2>Memo</h2></center>
+<hr/>
+<div class="container ">
+<div class="row">
+<div class="col-lg-3">
+<table >
+<tr>
+<td>
+<div class="panel panel-default">
+  <div class="panel-body">
+		<center><h1>01</h1></center>
+			<p>No of Employees received memo this month</p>
+	</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="panel panel-default ">
+  <div class="panel-body">
+   <center><h1>12</h1></center>
+   <p>No.of employees received memo this year</p>
+  </div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="col-lg-9">
+<table>
+<tr>
+<td>
+ <select id="grade" name="grade" class="form-control">
+      <option value="-1" selected="selected"><pre>Grade  </pre></option>
+      <option value="1" >A</option>
+      <option value="2">B</option>
+      <option value="3">C</option>
+      <option value="4">D</option>
+      <option value="5">E</option>
+      </select>
+
+ <td>
+
+
+<td>
+ <select id="designation" name="designation" class="form-control">
+      <option value="-1">Designation</option>
+      <option value="1" >Principal</option>
+      <option value="2">Vice-Principal</option>
+      <option value="3">Staff</option>
+      <option value="4">Clerk</option>
+      <option value="5">Attender</option>
+      </select>
+ 
+</td>
+
+  <td>
+      <button type="button" class="btn btn-primary form-control" onClick="javascript:ButtonClick();">Search</button>
+      </td>
+      <td>
+      <a href="letter.html" class="btn btn-primary">Clear</a>
+      </td>
+      </table>
+      <br\>
+<br\>
+   </div>
+<div class="container">
+<div id="TableView" style="display: none">
+<div class="col-lg-9">
+<div class="ui special cards">
+  <div class="card">
+    <div class="blurring dimmable image">
+      <img src="index1.jpg">
+    </div>
+    <div class="content">
+      <a class="header">Aarthi</a>
+      <div class="meta">
+        <span class="date">Joined in Sep 2014</span>
+
+      </div>
+      <div class="meta">
+       <span class="date"> Experience : 3 years</span>
+       </div>
+       <div class="meta">
+       <span class="date"> Reason for memo : Poor Performance</span>
+       </div>
+    </div>
+    
+  </div>
+
+  <div class="card">
+    <div class="blurring dimmable image">
+      <div class="ui inverted dimmer">
+        
+      </div>
+      <img src="index4.jpg">
+    </div>
+    <div class="content">
+      <a class="header">Aaluk</a>
+      <div class="meta">
+        <span class="date">Joined in Aug 2014</span>
+      </div>
+      <div class="meta">
+        <span class="date">Experience : 3 years</span>
+      </div>
+      <div class="meta">
+        <span class="date">Reason for memo : Poor Performance</span>
+      </div>
+    </div>
+   
+  </div>
+
+  <div class="card">
+    <div class="blurring dimmable image">
+      <div class="ui inverted dimmer">
+        
+      </div>
+      <img src="index5.jpg">
+    </div>
+    <div class="content">
+      <a class="header">Deepak</a>
+      <div class="meta">
+        <span class="date">Joined in Aug 2014</span>
+      </div>
+      <div class="meta">
+        <span class="date">Experience : 3 years</span>
+      </div>
+      <div class="meta">
+        <span class="date">Reason for memo : Poor Performance</span>
+      </div>
+    </div>
+   
+  </div>
+
+  <div class="card">
+    <div class="blurring dimmable image">
+      <div class="ui inverted dimmer">
+        
+      </div>
+      <img src="index6.jpg">
+    </div>
+    <div class="content">
+      <a class="header">Gugan</a>
+      <div class="meta">
+        <span class="date">Joined in Aug 2014</span>
+      </div>
+      <div class="meta">
+        <span class="date">Experience : 3 years</span>
+      </div>
+      <div class="meta">
+        <span class="date">Reason for memo : Poor Performance</span>
+      </div>
+    </div>
+   </div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
