@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PayRoll</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/main.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/label.css">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/container.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/button.min.css"></script>
+  <style type="text/css">
+    #circle{
+     
+      float: right;
+     margin:0 0 40px 35px;
+    }
+    #emp
+    {
+     left: 180px;
+  bottom: 55px;
+margin: 0 25px 15px 20px;
+font-size: 18px;
+font-family: "Times New Roman", Georgia, Serif;
+    }
+    .container{
+  width:150px;
+  margin-left: 10px;
+  float: left;
+}
+.img-circle{
+  border-radius: 50%;
+  
+  width:150px;
+  height: 150px;
+  float: left;
+}
+.text{
+  text-align: center;
+}
+
+
+
+  </style>
+</head>
+<body>
+   <div id="legend">
+      <legend class="text-primary"><h1>Salary Calculation</h1>
+      </legend>
+      </div>
+       <div class="main-container">
+      <div class="row gutter">
+      <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+      <div class="panel">
+      <div class ="noprint"> 
+      <div class="panel-body">
+      <form id="defaultForm" method="post" action="#" class="form-horizontal">
+      <fieldset>
+      <div class="form-group row gutter">
+     
+      <label class="col-lg-1 control-label">Grade:</label> 
+      <div class="col-lg-2">
+      <select class="form-control" id="Grade" placeholder="Select">
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+      <option>D</option>
+      </select></div>
+       <label class="col-lg-1 control-label" id="empId">Designation</label> 
+      <div class="col-lg-2"><input type="text" class="form-control" ></div>
+      <div class="col-md-3">
+      <input type="button"  class="btn btn-primary"  onclick="CreateTableFromJSON()" value="Calculate" />
+      <div id="showData">
+   <label class="col-lg-1 control-label" id="emp">Process completed</label> 
+  <img src="c.png" class=" pull-mid" id="circle" width="200" height="200">
+  </div>
+</div>
+      </fieldset>
+      </div>
+    </form>
+  </div>
+  </div>
+</fieldset>
+</form>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+    <div class="text"><h5>Sobana</h5></div>
+    <div class="text"><h5>13it001</h5></div>
+    <div class="text"><u><h5>completed</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+    <div class="text"><h5>Pirithivi</h5></div>
+    <div class="text"><h5>13it002</h5></div>
+    <div class="text"><u><h5>completed</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+    <div class="text"><h5>Arthi</h5></div>
+    <div class="text"><h5>13it003</h5></div>
+    <div class="text"><u><h5>Pending</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+    <div class="text"><h5>Dharani</h5></div>
+    <div class="text"><h5>13it004</h5></div>
+    <div class="text"><u><h5>Pending</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+   <div class="text"><h5>Kavitha</h5></div>
+    <div class="text"><h5>13it005</h5></div>
+    <div class="text"><u><h5>completed</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+   <div class="text"><h5>Uma Devi</h5></div>
+    <div class="text"><h5>13it006</h5></div>
+    <div class="text"><u><h5>completed</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="x.jpg"/></div>
+   <div class="text"><h5>Yashini</h5></div>
+    <div class="text"><h5>13it007</h5></div>
+    <div class="text"><u><h5>Pending</h5></u></div>
+</div>
+<div class="container">
+    <div class="img"><img class="img-circle" img src="y.png" width="10" height="10"/></div>
+</div>
+
+
+</body>
+</html>

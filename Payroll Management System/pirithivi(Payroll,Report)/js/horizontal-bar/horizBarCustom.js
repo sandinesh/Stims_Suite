@@ -1,0 +1,1 @@
+$(".sales-bar").horizBarChart({selector:".bar",speed:1e3});

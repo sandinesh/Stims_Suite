@@ -1,0 +1,317 @@
+<html  ng-app="myapp1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>teacher</title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/grid.min.css">
+<script >
+		var myapp= angular.module("myapp1",[]);
+		myapp.controller("mycontroller",function($scope){
+					var employee=[
+					{
+					photo:'images.jpg',
+					id:"100",
+					name:"vg",
+				    age:30,
+				    bno:42,
+					Route:"Erode-perundurai",
+			        starttime:"8am",
+					endtime:"8.50am",
+					email:"xyz@gmail.com",
+					mobile:"4356"},
+
+{
+					photo:'images.jpg',
+					id:"200",
+					name:"yuva",
+				    age:40,
+				    bno:48,
+					Route:"Bhavani-perundurai",
+			        starttime:"8am",
+					endtime:"8.30am",
+					email:"abc@gmail.com",
+					mobile:"4356"},
+
+{
+                    photo:'images.jpg',
+					id:"300",
+					name:"ravi",
+				    age:35,
+				    bno:55,
+					Route:"anthiyur-perundurai",
+			        starttime:"8am",
+					endtime:"8.40am",
+					email:"gef@gmail.com",
+					mobile:"4356"},
+
+					
+				];
+
+$scope.employee=employee;
+
+		});
+	</script>
+	<script type="text/javascript">
+		function image()
+{
+  document.getElementById("a1").style.display="inline";
+
+}
+function image2()
+{
+	document.getElementById("a2").style.display="inline";
+}
+function image3()
+{
+	document.getElementById("a3").style.display="inline";
+}
+function image4()
+{
+	document.getElementById("a4").style.display="inline";
+}
+	</script>
+<style type="text/css">
+.first
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'open sans';
+}
+a
+{
+	text-decoration: none;
+}
+div#header
+{
+	width:100%;
+	height: 50px;
+	background-color: #ff9966;
+	margin:0 auto;
+}
+.logo
+{
+	float:right;
+	margin-top: 10px;
+	margin-right: 150px;
+}
+.logo a
+{
+	font-size: 1.6em;
+	color:#ffffff ;
+
+
+}
+.logo a span
+{
+	font-weight: 300;
+}
+div#container
+{
+	width: 100%;
+	margin:0 auto;
+}
+.sidebar
+{
+	width:250px;
+    height:100%;
+	background-color: #666699;
+	float: left;
+}
+ul#nav
+{
+
+}
+ul#nav li
+{
+	list-style: none;
+}
+ul#nav li a
+{
+	color: #000000;
+	display: block;
+	padding: 10px;
+	font-size: 1em;
+	border-bottom:0px solid #0A0A0A;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s;
+
+
+}
+ul#nav li a:hover
+{
+	background-color: #030303;
+	color:#fff;
+}
+ul#nav li a.selected
+{
+	background-color: #030303;
+	color:#fff;
+	padding-left: 20px;
+}
+.content
+{
+	width:auto;
+	margin-left:250px;padding-left: 10px;
+	height:100%;
+	background-color: #ffffff; 
+	padding:15px;
+	background-image: url("school.jpg"); 
+}
+.content p
+{
+ color:#000000;
+ font-size: 1.8em;
+}
+div#box
+{
+	margin-top: 15px;
+}
+div#box .box-top
+{
+	color:#fff;
+	margin-top: 5px;
+	text-shadow: 0px 1px #ddd;
+	background-color: #2980b9;
+	padding: 5px;
+	padding-left: 15px;
+	font-weight:300;
+}
+div#box .box-panel
+{
+	padding: 50px;
+	padding-top: 10px;
+	background-color: #fff;
+	width: 950px;
+	height:300px;
+}
+a.mobile
+{
+	display:block;
+	color:#fff;
+	background-color: #000;
+	text-align: left;
+	padding-left: 7px;
+	border-bottom: 7px #fff;
+}
+a.mobile:active
+{
+  background-color: #4a4a4a;
+}
+@media only screen and (max-width:320px)
+{
+	.sidebar
+	{
+		width:100%;
+		display: none;
+	}
+.content
+{
+	margin-left: 0px;
+}
+}
+@media only screen and (max-width:320px)
+{
+	a.mobile
+	{
+		display:none;
+	}
+	}
+	.sidebar
+	{
+		
+		height:120%;
+	}
+}
+body{
+			font-family: arial;
+		}
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+</
+</style>
+
+</head>
+<body >
+<div id="header">
+<div class="logo"><img src="C:\Users\Public\Pictures\Sample Pictures\user.png" width="40px" height="40px">
+ <a class="logo" href="#">User</a>
+</div>
+</div>
+<a class="mobile" href="#">MENU</a>
+<div id="container">
+<div class="sidebar">
+<ul id="nav">
+<li id="1"  onclick="image();"><a href="#">route detail</a></li>
+<li id="2"  onclick="image2();"><a href="#">fees detail</a></li>
+</ul>
+</div>
+<div class="content">
+<h1>Transport Details</h1>
+<div id="box">
+<div class="box-top">Transport</div>
+<div class="box-panel">
+<div id="a1" ng-controller="mycontroller">
+search:<input type="text" placeholder="search driver" ng-model="searchtext"><br><br>
+<table class="contain" >
+	<thead>
+	<tr>
+	<th>photo</th>
+	<th>id</th>
+		<th>name</th>
+		<th>age</th>
+		<th>busno</th>
+		<th>route</th>
+		<th>start-time</th>
+		<th>End-time</th>
+		<th>End-time</th>
+		<th>contact</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat = " x in employee|filter: searchtext">
+		<td><img src="{{x.photo}}" width="100px"; height="100px;"></td>
+		<td>{{x.id}}</td>
+		<td>{{x.name}}</td>
+		<td>{{x.age}}</td>
+		<td>{{x.bno}}</td>
+		<td>{{x.route}}</td>
+		<td>{{x.starttime}}</td>
+		<td>{{x.endtime}}</td>
+		<td>{{x.email}}</td>
+		<td>{{x.mobile}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div>
+<button id="b1" type="button" align="margin-right">view Route and time</button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

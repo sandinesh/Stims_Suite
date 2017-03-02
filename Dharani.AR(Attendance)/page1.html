@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+
+	<title>STIMS SUIT</title>
+	<style>
+		.menu{
+			margin: 0;
+			padding: 5px;
+			width: 100%;
+			height: 90px;
+			font-size: 25px;
+			background-color:#404040;
+			color: white;
+
+		}
+  #logout
+  {
+    position:absolute;
+    top:25px;
+    right: 10px;
+ 
+  }
+		.col-sm-6 
+		{
+  
+    color:	#000066;
+	  text-align: center;
+ 	font-weight: bold; 
+ 	font-size: 20px;
+  margin: 20px 10px 0 55px;
+    margin-top: 100px;
+    margin-right: 10rem;
+ 	box-shadow: 10px 8px 16px 0 rgba( 0,0,0,0.2);   
+  	background-color: #4ddbff;            
+    transition: 1s;
+
+   width: 200px;
+max-height: 280px;
+    border-radius:10px;
+    backface-visibility:hidden;
+    padding:10px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+		}
+		.col-sm-6 img
+		{
+
+			padding: 2px;
+   height: auto;
+
+		}
+  
+#std
+{
+ float: right;
+}
+ #tab
+  {
+   display: none;
+   
+ }
+.bttn,
+{
+ float: right;
+}
+.btn
+{
+ float: right;
+}
+	</style>
+ <script type="text/javascript">
+  function tend() {
+          document.getElementById("tab").style.display="inline";
+
+               }
+        
+function subcard()
+{
+ document.getElementById('cards').style.display="inline";
+}
+  
+ </script>
+</head>
+<body>
+
+     <div class="menu">	<br/>
+		           <center>Staff Login</center>
+          <a href=""><img src="images.jpg" id="logout" style="float: right; width:50px; height: 45px;">
+    </a></div>
+    <div class="container">
+    <div class="ui three column grid">
+    
+
+              <a href="">
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                         <img src="attendance.jpg" style="height: 130px" width="150px">
+                         <p><center>Student Attendance</center></p>
+        <p><button type="submit" class="bttn" style="border: 0.2px; background: transparent; "><img src="icon.jpg" class="img" onclick="tend()" style="float:right;" width="75px" ></p></button>
+              </div> </a>
+
+
+
+           <a href=""><div class="col-sm-6 col-md-4 col-lg-2">
+                     <img src="attendance.jpg" style="height: 130px" width="150px">
+                    <p><center>View Staff Attendance</center></p>
+             </div></a>
+
+
+                 <a href=""><div class="col-sm-6 col-md-4 col-lg-2">
+                                <img src="attendance.jpg" style="height: 130px" width="150px">
+                               <p><center>Labour attendance</center></p>
+            <p><button type="submit" class="btn" style="border: 0.2px; background: transparent; "><img src="icon.jpg" class="img" onclick="subcard()" style="float:right;" width="75px" ></p></button>
+                     </div></a>
+
+         <div id="tab" >     
+  <table class="ui inverted teal table" style="width:5px; margin-left: 100px;"  height="8px" >
+   <thead>
+    <tr>
+     
+      <th colspan="3" scope="colgroup"  style="text-align: center;">Standard</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+   
+      <td><button class="ui teal button">1</button></td>
+      <td><button class="ui teal button">2</button></td>
+      <td><button class="ui teal button">3</button></td>
+    </tr>
+    <tr>
+      
+      <td><button class="ui teal button">4</button></td>
+      <td><button class="ui teal button">5</button></td>
+      <td><button class="ui teal button">6</button></td>
+    </tr>
+    <tr>
+      <td><button class="ui teal button">7</button></td>
+      <td><button class="ui teal button">8</button></td>
+      <td><button class="ui teal button">9</button></td>
+    </tr>
+  
+    <tr>
+      
+      <td><button class="ui teal button">10</button></td>
+      <td><button class="ui teal button">11</button></td>
+      <td><button class="ui teal button">12</button></td>
+    </tr>
+     </tbody>
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>

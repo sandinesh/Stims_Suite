@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PayRoll</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/main.css" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="jquery-3.1.1.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/label.css"></script>
+   </head>
+<script type="text/javascript">
+  function CreateTableFrom(){
+   document.getElementById('sp').style.display="inline";
+}
+</script>
+<style type="text/css">
+  .panel-default {
+    margin-top: 10%;
+    margin-left:400px;
+    width: 50%;
+ }
+ .form-horizontal .control-label {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+} 
+
+  
+
+ table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-right: 1px solid #ddd;
+
+}
+
+ td,  th {
+  padding: 10px;
+}
+
+ td:first-child, th:first-child {
+  padding-left: 20px;
+}
+ th{
+    text-align: left;
+   padding-left: 10px
+   padding-left:  10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  
+}
+h2,h3
+{
+  text-align:center;
+}
+</style>
+<body>
+ <div id="legend">
+<legend class="text-primary"><h1>Stop Payment</h1>
+</legend>
+    <div class="main-container">
+    <div class="row gutter">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="panel">                       
+    <div class="panel-body">
+    <form id="defaultForm" method="post" action="" class="form-horizontal">
+    <fieldset>
+    <div class="form-group row gutter">
+    <h2>
+  <img src="x.jpg" class="img-circle pull-mid" width="100" height="100">Stop Payment </h2>
+  <label class="col-lg-6 control-label">Employee ID:</label>
+ <div class="col-lg-6"><input type="text" class="form-control" name="" placeholder=""></div>
+  </div>
+  <div class="form-group row gutter">
+   <label class="col-lg-6 control-label">Reason For Stopping Payment:</label>
+<div class="col-lg-6">
+<select class="form-control" id="Grade" placeholder="Select">
+      <option>Non-Porformance</option>
+      <option>irrugular attendance</option>
+      <option>Attitude</option>
+      
+      </select>
+</div>
+</div>
+ </fieldset>
+<div class="form-group row gutter">
+<div class="col-lg-6 col-lg-offset-6"><input type="button"  class="btn btn-primary"  onclick="CreateTableFrom()" value="Proceed" /></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div id="sp" style="display: none">  
+<div class="panel">
+
+<div class="panel-body">
+<form id="defaultForm" method="post" class="form-horizontal">
+<fieldset>
+<!--  <legend>Regular expression based validators</legend> -->
+<table>
+<thead>
+<tr><th colspan="4">
+  Empolyee Details
+</th></tr>
+<tr><td id="td01">Date of Joining:</td>
+<td id="td02">06.3.2014</td>
+<td id="td03">Designation:</td>
+<td id="td04">Staff:</td>
+</tr>
+<tr>
+<td>PayRoll Month:</td>
+<td id="td01">Feb 2017</td>
+<td id="td02">Grade</td>
+<td id="td03">B</td>
+</tr>
+</thead>
+</table></div>
+</fieldset>
+</div>                            
+<div class="form-group no-margin">
+<div class="row gutter">
+<div class="col-md-6"></div>
+<div class="col-md-2"><button type="submit" class="btn btn-primary">Save</button></div>
+<div class="col-md-3"><button type="submit" class="btn btn-primary">Cancel</button></div>
+</div>
+</div>
+                              
+</form>
+</div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>  
+
+
+</body>
+</html>

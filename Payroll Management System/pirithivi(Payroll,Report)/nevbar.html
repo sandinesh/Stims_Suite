@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+   #navbar
+   {
+      background-color: #3366cc;
+      font-color:black;
+   }
+#back
+{
+   background-color: #da8bb3;
+}
+
+#pie,#bar
+{
+   display:none;
+}
+
+  </style>
+</head>
+<body>
+<script type="text/javascript">
+   function view()
+   {
+      document.getElementById("pie").style.display="inline";
+   }
+   function barchart()
+   {
+      document.getElementById("bar").style.display="inline";
+   }
+</script>
+<nav class="navbar navbar-inverse" id="navbar" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://santechnosolutions.com/">STIMS SUIT</a>
+    </div>
+    <ul class="nav navbar-nav" >
+      
+      <li class="active dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Employee <span class="caret"></span></a>
+        <ul class="dropdown-menu" id="back">
+          <li><a href="#">SearchEmployee</a></li>
+          <li><a href="#">SeparateEmployee</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Payroll<span class="caret"></span></a>
+      <ul class="dropdown-menu" id="back">
+          <li><a href="SalaryCalculation.html">SalaryCalculation</a></li>
+          <li><a href="#">Stop Payment</a></li>
+          <li><a href="#">FinalSettelment</a></li>
+          <li><a href="#">Revise Employee Salary</a></li></ul></li>
+
+
+          <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+      <ul class="dropdown-menu" id="back">
+          <li><a href="#">PaySlip</a></li>
+          <li><a href="#">ConsolidatedStatement</a>
+          </li>
+          <li><a href="#">Memo</a></li>
+          <li><a href="#">Letter</a></li>
+          </ul></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+<center>
+ <img src="photos/images.jpg" id="pie" style="margin-top:200px;" >
+ <img src="photos/bar.jpg" id="bar" style="margin-top:200px;" >
+ </center>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

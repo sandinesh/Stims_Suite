@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		STIMS SUITE
+	</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<style type="text/css">
+ td
+      {
+        padding:10px;
+        
+      }
+      #th1
+      {
+        
+        text-align:center; vertical-align:middle;
+      }
+       th
+      {
+        
+        text-align:center; vertical-align:middle;
+      }
+
+      :required  {  
+     background: url(https://cdn0.iconfinder.com/data/icons/fugue/icon/asterisk-small.png) no-repeat;
+     background-position:left top;
+    }
+   .text1
+{
+    color:white;
+}
+
+.container {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+</style>
+<script type="text/javascript">
+  function fun1()
+{
+  document.getElementById('TableView1').style.display="inline";
+   document.getElementById('TableView2').style.display="none";
+    document.getElementById('TableView3').style.display="none";
+   
+}
+ function fun2()
+{
+  
+  document.getElementById('TableView1').style.display="none";
+  document.getElementById('TableView2').style.display="inline";
+   document.getElementById('TableView3').style.display="none";
+   document.getElementById('table1').style.display="none";
+}
+
+function fun3()
+{
+  
+  document.getElementById('TableView1').style.display="none";
+  document.getElementById('TableView2').style.display="none";
+   document.getElementById('TableView3').style.display="inline";
+
+}
+function fun4()
+{
+
+       document.getElementById('table1').style.display="inline";
+}
+var app=angular.module("myapp",[]).controller("mycontroller",function($scope)
+    {
+var clg={
+code:01,
+name:"SAN TECHNO SOLUTIONS",
+img:"1.jpg",
+dno_street:"12-E.K.VALASU",
+city:"ERODE",
+state:"TAMILNADU",
+country:"INDIA",
+zipcode:638011,
+phone:22454,
+mobile:9098765432,
+faxno:22143,
+contact_person:"Mr.ADMIN",
+established_on:"01/01/2017",
+academic_year_from:"jun-2016",
+academic_year_to:"may-2017"
+};
+
+var dept=[{sno:1,dcode:"mca01",dname:"MCA",dtype:"Academic"},{sno:2,dcode:"it02",dname:"IT",dtype:"Academic"},{sno:3,dcode:"cse03",dname:"CSE",dtype:"Academic"},{sno:4,dcode:"101",dname:"Accounts",dtype:"NonAcademic"}];
+$scope.dept=dept;
+$scope.rowLimit=5;
+$scope.clg=clg;
+    });
+</script>
+</head>
+<body ng-app="myapp" ng-controller="mycontroller" >
+<div class="container">
+<h1 class="text-success">Settings</h1><hr>
+<div class="form">
+<button type="button" class="btn btn-primary btn-lg" onclick="fun1()"> 
+Institution Details
+</button>
+<button type="button" class="btn btn-primary btn-lg" onclick="fun2()"> 
+Department Details
+</button>
+<button type="button" class="btn btn-primary btn-lg" onclick="fun3()" >
+Academic Details
+</button>
+</div>
+<hr>
+<!-- INSTITUTION DETAILS -->
+<div id="TableView1" style="display: none" >
+ <div class="panel panel-primary">
+   <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">INSTITUTION DETAILS</a>
+        </h4>
+      </div>
+    <div class="panel-body" >
+    <div id="collapse1" class="panel-collapse collapse">
+<img ng-src="{{clg.img}}" alt="{{clg.name+'img'}}" style="height:100px; width:100px">
+<table>
+<div  class="table-responsive">
+<tr>
+<td class="col-sm-4 ">
+<label>NAME OF THE INSTITUTION</label>
+</td>
+<td></td><td class="col-sm-4 ">
+<label>INSTITUTION CODE</label>
+</td>
+<td></td><td class="col-sm-4 ">
+<label>CONTACT PERSON</label>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4 "   >
+<input type="text" class="form-control" class="form-control" ng-model="clg.name" />
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.code"/>
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.contact_person"/>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<label>D.NO & STREET</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>CITY</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>STATE</label>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<input type="text" class="form-control" class="form-control" ng-model="clg.dno_street" />
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.city"/>
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.state"/>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<label>COUNTRY</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>ZIP-CODE</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>PHONE NUMBER</label>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<input type="text" class="form-control" class="form-control" ng-model="clg.country" />
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.zipcode"/>
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.phone"/>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<label>MOBILE</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>FAX</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>SCHOOL ESTABLISHED </label>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<input type="text" class="form-control" class="form-control" ng-model="clg.mobile" />
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.faxno"/>
+</td>
+<td></td><td class="col-sm-2">
+<input type="text" class="form-control" ng-model="clg.established_on"/>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<label>ACADEMIC YEAR FROM</label>
+</td>
+<td></td><td class="col-sm-4">
+<label>ACADEMIC YEAR TO</label>
+</td>
+</tr>
+<tr>
+<td class="col-sm-4">
+<input type="text" class="form-control"  ng-model="clg.academic_year_from" />
+</td>
+<td></td><td class="col-sm-4">
+<input type="text" class="form-control" ng-model="clg.academic_year_to"/>
+</td>
+</tr></div>
+</table>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- DEPARTMENT DETAILS -->
+<!-- <input type="text" id="TableView2"  style="display: none">
+<input type="text" id="TableView3"  style="display: none"> -->
+<div id="TableView2" style="display: none"> 
+ <h3 class="text-primary">DEPARTMENT DETAILS</h3>
+ <div class="table-responsive">   
+ <input type="text" placeholder="search here " ng-model="searchtext">
+Table Size:<input type="number" step="1" min="0" max="10" ng-model="rowLimit" ><br><br>
+<button type="button" class="btn btn-info btn-sm">ADD DEPARTMENT</button>
+<table class="table table-bordered" id="th1" style="height:150px; width:850px" >
+  <thead>
+  <tr>
+    <th>SNO</th>
+    <th>DEPARTMENT CODE</th>
+    <th>DEPARTMENT NAME</th>
+     <th>DEPARTMENT TYPE</th>
+      <th>OPTIONS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat = " x in dept|filter: searchtext| limitTo:rowLimit">
+    <td>{{x.sno}}</td>
+    <td>{{x.dcode}}</td>
+    <td>{{x.dname}}</td>
+    <td>{{x.dtype}}</td>
+    <td><button type="button" class="btn btn-primary btn-sm"  onclick="fun4()">edit</button>
+<button type="button" class="btn btn-primary btn-sm">delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!--  -->
+<div id="table1" style="display: none" >
+ <div class="panel panel-primary">
+   <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Department</a>
+        </h4>
+      </div>
+    <div class="panel-body" >
+    <div id="collapse2" class="panel-collapse collapse">
+    <input type="text" name="text" ng-model="{{dept.dcode}}">
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+</div>
+
+</body>        
+
+</html>

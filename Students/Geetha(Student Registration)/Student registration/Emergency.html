@@ -1,0 +1,358 @@
+<html>
+<head>
+<title>
+Registration Form
+</title>
+<!-- Latest compiled and minified CSS -->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="  css/breadcrumbs.css">
+    <link href="School Registration/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  <style type="text/css">
+	
+
+.centered-form{
+	margin-top: 50px;
+}
+.font
+{
+	display: block;
+width: 100%;
+height: 40px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+   
+    
+}
+
+}
+.centered-form .panel
+{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+label.label-floatlabel {
+    font-weight: bold;
+    color: #46b8da;
+    font-size: 11px;
+}
+:required  {  
+	 background: url(https://cdn0.iconfinder.com/data/icons/fugue/icon/asterisk-small.png) no-repeat;
+	 background-position:left top;
+	}
+	.studentphoto {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+td {
+   padding:10px;
+   
+}
+.mar
+{
+	border-radius: 5px;
+}
+
+.margin_for_breadcrumb
+{
+  margin-top:19px;
+}
+.breadcrumb { 
+  list-style: none; 
+  overflow: hidden; 
+  font-size:16px;
+}
+.breadcrumb li { 
+  float: left; 
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 50px;
+  /* fallback color */
+  background: hsla(0, 0%, 0%,1); 
+  position: relative; 
+  display: block;
+  float: left;
+}
+.breadcrumb li a::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(0, 0%, 0%,1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.breadcrumb li a::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 3px;
+  left: 100%;
+  z-index: 1; 
+}
+.breadcrumb li:first-child a {
+  padding-left: 60px;
+ 
+}
+.breadcrumb li:nth-child(3) a {
+
+  background: hsla(140, 100%, 40%,1);
+ 
+}
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(140, 100%, 40%,1); 
+  padding-left: 79px;
+}
+.breadcrumb > li 
+{ 
+  text-shadow: 0 0px 0 #FAE;
+}
+
+  </style>
+   
+
+</head>
+<body class="margin_for_breadcrumb">
+<ul class="breadcrumb">
+  <li><a href="#" style="
+    height: 40px;">Student Details</a></li>
+  <li><a href="#" style="
+    height: 40px;
+    padding-left: 60px;">Parent/Guardian Details</a></li>
+  <li><a href="#" style="
+    height: 40px;
+    ">Emergency Contact & Siblings Details</a></li>
+  <li><a href="#" style="
+    height: 40px;">School Details</a></li>
+  <li><a href="#" style="
+    height: 40px;">Other Details</a></li>
+  <li><a href="#" style="
+    height: 40px;">Uploads & Declaration</a></li>
+</ul>
+
+
+    <div class="container-fluid">
+        <div class="centered-form">
+            <center>
+                <h3 class="text1">Admission Form</h3>
+            </center>
+            <hr/>
+            <h3 class="text1">3. Emergency Contact and Siblings Details</h3>
+        <div class="col-lg-12 ">
+
+        	<div class="panel panel-success ">
+        		<div class="panel-heading">
+			        <h3 class="panel-title">3.1 Emergency Contact Details </h3>
+			 	</div>
+			 	<div class="panel-body">
+			    	<form role="form">
+			    	    <div class="row col-lg-9">
+			    		 <table width="100%"   >
+			    				
+			    			<tr>
+			    			    <td>
+                                <input type="text"  name="name" class="form-control" id="name" placeholder="Name" required="required">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <input type="text"  name="relatione" class="form-control" id="relatione" placeholder="Relationship" required="required">
+                                    
+
+                                </td>
+
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <input type="number"  name="numbere" class="form-control" id="numbere" placeholder="Contact Number" required="required">
+
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                               
+                          </table>
+                        </div>
+                        <div class="col-lg-offset-10">
+                            <table>
+
+	                            <tr>
+	
+		                            <td>
+		
+			                            <img src="no-image.jpg" class="img-responsive img-rounded" >
+		
+		                            </td>
+	
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                    <input class="btn btn-primary " type="button" value="Choose Photo">
+
+	
+	                                <td>
+	                            </tr>
+                            </table>
+                        </div>
+                   </form>
+	            </div>
+	        
+	        
+	        </div>
+
+
+
+
+<div class="panel panel-success ">
+        		<div class="panel-heading">
+			        <h3 class="panel-title">3.2 Siblings Details </h3>
+			 	</div>
+			 	<div class="panel-body">
+			    	<form role="form">
+			    	    <div class="row col-lg-12">
+			    		 <table width="100%"   >
+			    				
+			    			<tr>
+                                <td>
+                                    <select id="sibling" name="sibling" class="form-control" >
+                                        <option value="" selected="selected">Number Of Siblings</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        
+                                        </select>
+                                </td>
+			    			    <td>
+			    			
+			    			        <input type="text" name="names" id="names" class="form-control " placeholder="Name">
+                                   
+
+                                </td>
+                                <td>
+                                    <select id="class" name="class" class="form-control">
+                                        <option value="" selected="selected">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </td>
+
+                                </tr>
+                                <tr>
+                                <td>
+                                     <input type="text" id="datepicker" class="form-control" placeholder="Date Of Birth">
+                                    
+                                </td>
+                                
+                                <td>
+                                   <input type="number" name="age" id="age" class="form-control " placeholder="Age">
+                                </td>
+                                <td>
+                                   <select id="class" name="class" class="form-control" >
+                                        <option value="" selected="selected">Current Class</option>
+                                        <option value="prekgg">PreKG</option>
+                                        <option value="lkgg">LKG</option>
+                                        <option value="ukgg">UKG</option>
+                                        <option value="onee">1</option>
+                                        <option value="twoo">2</option>
+                                        <option value="threee">3</option>
+                                        <option value="fourr">4</option>
+                                        <option value="fivee">5</option>
+                                        <option value="sixx">6</option>
+                                        <option value="sevenn">7</option>
+                                        <option value="eightt">8</option>
+                                        <option value="ninee">9</option>
+                                        <option value="ten">10</option>
+                                        <option value="elevenn">11</option>
+                                        <option value="twelve">12</option>
+                                        <option value="other">Others</option>
+                                    </select>
+                                </td>
+                                </tr>
+                                <tr>
+                           
+                                <td>
+                                    <select id="school" name="school" class="form-control">
+                                        <option value="" selected="selected">School </option>
+                           
+                                        <option value="yes1">Same School</option>
+                                        <option value="no1">Other School</option>
+                                        
+                                        
+                            
+                                        </select>
+                                </td>
+
+                                <td>
+
+                                  <input type="text" name="admission" id="admission" class="form-control " placeholder="Admission Number" >
+                                    
+
+
+                                </td>
+                           
+                            <td>
+                                <input type="text" name="schoolname" id="schoolname" class="form-control " placeholder="School Name" >	
+                            </td>
+                            </tr>
+                            
+                            
+                          </table>
+                        </div>
+                        <div class="btn-group col-lg-offset-10">
+         
+           <a href="School_details.html" class="btn btn-primary" > --Next-- </a>
+           </div>
+</form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+    
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="School Registration/js/bootstrap.min.js"></script>
+
+</body>
+</html>		    			
+			    			
